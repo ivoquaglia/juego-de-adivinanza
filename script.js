@@ -16,16 +16,16 @@ function chequearResultado(){
     
     if(numeroIngresado === numeroAzar){
         mensaje.textContent = "¡Felicitaciones! ¡Has adivinado el numero";
-        mensaje.style.color = "green";
+        mensaje.style.color = "#305f2f";
         numeroEntrada.disabled = true;
     }
     else if(numeroIngresado < numeroAzar){
         mensaje.textContent = "¡Más Alto! El numero es mayor al que dijiste";
-        mensaje.style.color = "red";
+        mensaje.style.color = "#a5388d";
     }
     else{
         mensaje.textContent = "¡Más bajo! El numero es menor al que dijiste"
-        mensaje.style.color = "red";
+        mensaje.style.color = "#a5388d";
     }
 
 }
